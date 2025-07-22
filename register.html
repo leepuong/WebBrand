@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Design</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/main.js"></script>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="input_box">
+            <div class="titel">
+                <h1 class="wel">Welcome!</h1>
+                <p class="sub">Become a devoted follower of Workaholishit</p>
+            </div>
+            <div class="boxBtnLogWithGoogle styleBtn">
+                <button class="btnLogWithGoogle" onclick="window.location.href='./homePage.html'">
+            <img
+              width="28"
+              height="28"
+              src="https://img.icons8.com/color/48/google-logo.png"
+              alt="google-logo"
+            />Sign in with Google
+          </button>
+            </div>
+            <div class="boxBtnLogWithAppleID styleBtn">
+                <button class="btnLogWithAppleID" onclick="window.location.href='./homePage.html'">
+            <img
+              width="28"
+              height="28"
+              src="https://img.icons8.com/ios-filled/ffffff/50/mac-os.png"
+              alt="mac-os"
+            />Sign in with Apple ID
+          </button>
+            </div>
+            <div class="or">
+                <hr />
+                <span>or</span>
+            </div>
+            <div class="inputEmail">
+                <p>Email</p>
+                <input type="email" placeholder="Your email address" />
+            </div>
+            <!-- password -->
+            <div class="inputPass">
+                <div class="passAndForgot">
+                    <p>Password</p>
+                </div>
+                <div class="inputBoxPass">
+                    <input id="passwordInput1" type="password" placeholder="Your password" />
+
+                    <img id="showIcon1" class="toggle-icon" width="24" height="24" src="https://img.icons8.com/ffffff/material-outlined/24/visible--v1.png" alt="Show password" onclick="togglePassword1()" />
+
+                    <img id="hideIcon1" class="toggle-icon hidden" width="24" height="24" src="https://img.icons8.com/ffffff/material-outlined/24/invisible.png" alt="Hide password" onclick="togglePassword1()" />
+                </div>
+            </div>
+            <!-- comfirm password -->
+            <div class="inputPass">
+                <div class="passAndForgot">
+                    <p>Comfirm password</p>
+                </div>
+                <div class="inputBoxPass">
+                    <input id="passwordInput2" type="password" placeholder="Comfirm your password" />
+
+                    <img id="showIcon2" class="toggle-icon" width="24" height="24" src="https://img.icons8.com/ffffff/material-outlined/24/visible--v1.png" alt="Show password" onclick="togglePassword2()" />
+
+                    <img id="hideIcon2" class="toggle-icon hidden" width="24" height="24" src="https://img.icons8.com/ffffff/material-outlined/24/invisible.png" alt="Hide password" onclick="togglePassword2()" />
+                </div>
+            </div>
+
+            <div class="boxBtnLogin styleBtn">
+                <button class="btnlogin" onclick="window.location.href='./homePage.html'">
+            Sign in
+          </button>
+            </div>
+        </div>
+        <div class="layerBgTop"></div>
+        <div class="layerBgBottom"></div>
+    </div>
+
+    <script>
+        function togglePassword1() {
+            const passwordInput1 = document.getElementById("passwordInput1");
+            const showIcon1 = document.getElementById("showIcon1");
+            const hideIcon1 = document.getElementById("hideIcon1");
+
+            if (passwordInput1.type === "password") {
+                passwordInput1.type = "text";
+                showIcon1.classList.add("hidden");
+                hideIcon1.classList.remove("hidden");
+            } else {
+                passwordInput1.type = "password";
+                showIcon1.classList.remove("hidden");
+                hideIcon1.classList.add("hidden");
+            }
+        }
+
+        function togglePassword2() {
+            const passwordInput2 = document.getElementById("passwordInput2");
+            const showIcon2 = document.getElementById("showIcon2");
+            const hideIcon2 = document.getElementById("hideIcon2");
+
+            if (passwordInput2.type === "password") {
+                passwordInput2.type = "text";
+                showIcon2.classList.add("hidden");
+                hideIcon2.classList.remove("hidden");
+            } else {
+                passwordInput2.type = "password";
+                showIcon2.classList.remove("hidden");
+                hideIcon2.classList.add("hidden");
+            }
+        }
+    </script>
+</body>
+
+</html>

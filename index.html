@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Design</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/main.js"></script>
+</head>
+
+<body>
+    <div class="bg">
+        <div class="input_box">
+            <div class="titel">
+                <h1 class="wel">Welcome back!</h1>
+                <p class="sub">Log in to the Workaholishit Order</p>
+            </div>
+            <div class="boxBtnLogWithGoogle styleBtn">
+                <button class="btnLogWithGoogle" onclick="window.location.href='./homePage.html'">
+            <img
+              width="28"
+              height="28"
+              src="https://img.icons8.com/color/48/google-logo.png"
+              alt="google-logo"
+            />Log in with Google
+          </button>
+            </div>
+            <div class="boxBtnLogWithAppleID styleBtn">
+                <button class="btnLogWithAppleID" onclick="window.location.href='./homePage.html'">
+            <img
+              width="28"
+              height="28"
+              src="https://img.icons8.com/ios-filled/ffffff/50/mac-os.png"
+              alt="mac-os"
+            />Log in with Apple ID
+          </button>
+            </div>
+            <div class="or">
+                <hr />
+                <span>or</span>
+            </div>
+            <div class="inputEmail">
+                <p>Email</p>
+                <input type="email" placeholder="Your email address" />
+            </div>
+            <div class="inputPass">
+                <div class="passAndForgot">
+                    <p>Password</p>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <div class="inputBoxPass">
+                    <input id="passwordInput" type="password" placeholder="Your password" />
+
+                    <img id="showIcon" class="toggle-icon" width="24" height="24" src="https://img.icons8.com/ffffff/material-outlined/24/visible--v1.png" alt="Show password" onclick="togglePassword()" />
+
+                    <img id="hideIcon" class="toggle-icon hidden" width="24" height="24" src="https://img.icons8.com/ffffff/material-outlined/24/invisible.png" alt="Hide password" onclick="togglePassword()" />
+                </div>
+            </div>
+            <div class="boxBtnLogin styleBtn">
+                <button class="btnlogin" onclick="window.location.href='./homePage.html'">
+            Log in
+          </button>
+            </div>
+            <div class="dontHaveAnAcc">
+                Don't have an account? <a href="./register.html">Sign up</a>
+            </div>
+        </div>
+        <div class="layerBgTop"></div>
+        <div class="layerBgBottom"></div>
+    </div>
+
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById("passwordInput");
+            const showIcon = document.getElementById("showIcon");
+            const hideIcon = document.getElementById("hideIcon");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                showIcon.classList.add("hidden");
+                hideIcon.classList.remove("hidden");
+            } else {
+                passwordInput.type = "password";
+                hideIcon.classList.add("hidden");
+                showIcon.classList.remove("hidden");
+            }
+        }
+    </script>
+</body>
+
+</html>
