@@ -12,7 +12,38 @@
 
   <body>
     <div class="pageHome">
-      <div class="heading"></div>
+      <div class="header">
+        <div class="headerBlock">
+          <div class="headerLeft">
+            <div class="menu">
+              <img
+                width="32"
+                height="32"
+                src="https://img.icons8.com/ffffff/sf-black/64/menu.png"
+                alt="menu"
+              />
+            </div>
+            <div
+              class="namePage"
+              scroll-behavior="smooth"
+              onclick="window.location.href='#pageHome'"
+            >
+              Home
+            </div>
+          </div>
+          <div class="headerRight">
+            <div class="bagBtn">Bag</div>
+            <div class="iconBag">
+              <img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/ffffff/tiny-glyph/16/product.png"
+                alt="product"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="pageLayer2">
         <div class="boxVideo">
           <video autoplay loop muted src="./src/21video.mp4"></video>
@@ -20,11 +51,62 @@
           <div class="filter"></div>
           <div class="video"></div>
           <div class="warning1"></div>
-          <div class="warning2"></div>
+          <div class="warning2" id="pageHome"></div>
+        </div>
+        <div class="warningSecond">
+          <div class="iconWarning"></div>
+
+          <p class="wText">This is not a brand, this is a confession</p>
+          <p class="RedText">We are workaholishit</p>
         </div>
       </div>
-      <div class="pageLayer3"></div>
-      <div class="pageLayer1"></div>
+      <div class="pageLayer3">
+        <div class="newProduct">
+          <div class="subHeaderOfProduct">
+            <p class="new">new</p>
+            <p class="viewAll">all</p>
+          </div>
+          <div class="viewProduct">
+            <div class="phaseModel"></div>
+            <div class="phaseT">
+              <div class="frontT"></div>
+              <div class="backT"></div>
+            </div>
+            <div class="phaseInfo">
+              <div class="btnAddProduct">
+                <div class="infoT">
+                  <p class="infoName">Mystery Pryer</p>
+                  <p class="infoPrice">$15</p>
+                </div>
+                <button class="addProduct">
+                  <img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/ios-glyphs/f2f2f2/30/plus-math.png"
+                    alt="plus-math"
+                  />
+                </button>
+              </div>
+
+              <div class="bgT"></div>
+            </div>
+          </div>
+          <div class="numberPageBar">
+            <div class="lineForPro">
+              <div class="lineForProNew new1"></div>
+              <div class="lineForProNew new2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pageLayer1">
+        <div class="bgFooter">
+          <div class="textOnfooter"></div>
+          <div class="bannerWarning rotation3"></div>
+          <div class="bannerWarning rotation2"></div>
+          <div class="bannerWarning rotation1"></div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

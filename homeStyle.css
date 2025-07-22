@@ -39,7 +39,7 @@ button {
 }
 
 body {
-    height: 10000px;
+    /* height: 10000px; */
 }
 
 .boxVideo {
@@ -112,4 +112,312 @@ video {
     width: 100%;
     height: 55px;
     z-index: 5;
+}
+
+.warningSecond {
+    margin: 110px 0 55px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconWarning {
+    content: url('./src/warningIcon.svg');
+    width: 10%;
+    aspect-ratio: 1 / 1;
+}
+
+.wText {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+.RedText {
+    color: #e10201;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.header {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.headerBlock {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 55px;
+    align-items: center;
+    padding: 0 60px;
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu {
+    padding: 5px;
+    line-height: 10px;
+    background-color: #ff15152b;
+    backdrop-filter: blur(3px);
+    border-radius: 5px;
+}
+
+.namePage {
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 17px;
+    background-color: #ff15152b;
+    backdrop-filter: blur(5px);
+    scroll-behavior: smooth;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.iconBag {
+    padding: 9px;
+    line-height: 10px;
+    background-color: #ff15152b;
+    backdrop-filter: blur(3px);
+    border-radius: 5px;
+}
+
+.bagBtn {
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 17px;
+    background-color: #ff15152b;
+    backdrop-filter: blur(5px);
+    scroll-behavior: smooth;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.subHeaderOfProduct {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.new {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.viewAll {
+    line-height: 32px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 17px;
+    background-color: #ff15152b;
+    backdrop-filter: blur(5px);
+    scroll-behavior: smooth;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.pageLayer3 {
+    padding: 20px 120px 20px;
+}
+
+.viewProduct {
+    background-color: #0000003b;
+    width: 100%;
+    aspect-ratio: 3/2;
+    display: flex;
+    gap: 20px;
+    border-radius: 10px;
+    margin: 50px 0 20px;
+    padding: 10px;
+}
+
+.viewProduct>div {
+    flex: 1;
+    /* border: 1px solid #ccc; */
+    aspect-ratio: 1 / 3;
+}
+
+.phaseT {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.phaseT>div {
+    flex: 1;
+    margin: 15px;
+    /* border: 1px solid #ccc; */
+}
+
+.phaseInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.phaseInfo>div {
+    flex: 1;
+    /* border: 1px solid #ccc; */
+}
+
+.phaseModel {
+    background-image: url(/src/ChatGPT.png);
+    background-size: cover;
+    background-position: -40px center;
+}
+
+.frontT {
+    background-image: url(/src/frontT.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.backT {
+    background-image: url(/src/backT.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.bgT {
+    background-image: url(/src/bgOfT.jpg);
+    background-size: cover;
+    background-position: center;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.infoT {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+}
+
+.infoName {
+    font-size: 42px;
+    font-weight: 400;
+    color: #f2f2f2;
+}
+
+.infoPrice {
+    font-size: 32px;
+    font-weight: 100;
+    color: #f2f2f25c;
+}
+
+.addProduct {
+    background-color: #e10201;
+    width: 42px;
+    height: 42px;
+    margin: 15px;
+    border: none;
+    border-radius: 7px;
+}
+
+.btnAddProduct {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.numberPageBar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lineForPro {
+    display: flex;
+    gap: 5px;
+    width: 50%;
+}
+
+.lineForProNew {
+    width: 100%;
+    border-radius: 1px;
+    height: 3px;
+    background-color: #f2f2f239;
+    margin: 10px 0;
+}
+
+.new1 {
+    background-color: #f2f2f299 !important;
+}
+
+.bgFooter {
+    background-image: url('./src/bgText.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    aspect-ratio: 4.5/1;
+    position: relative;
+    overflow: hidden;
+}
+
+.textOnfooter {
+    background-image: url('./src/textOnbg.png');
+    background-size: cover;
+    background-position: center;
+    aspect-ratio: 5/1;
+    width: 85%;
+    position: absolute;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bannerWarning {
+    background-image: url(/src/warning1.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    width: 60%;
+    height: 55px;
+}
+
+.rotation1 {
+    z-index: 15;
+    top: 61%;
+    left: 48%;
+    transform: rotate(146deg);
+    box-shadow: 11px -10px 18px #00000094;
+}
+
+.rotation2 {
+    z-index: 13;
+    top: 45%;
+    left: 49%;
+    transform: rotate(37deg);
+    box-shadow: 11px -10px 18px #00000094;
+}
+
+.rotation3 {
+    z-index: 14;
+    top: 28%;
+    left: 54%;
+    transform: rotate(43deg);
+    box-shadow: 11px -10px 18px #00000094;
 }
