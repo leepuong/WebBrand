@@ -66,7 +66,57 @@
             <p class="new">new</p>
             <p class="viewAll">all</p>
           </div>
-          <div class="viewProduct">
+          <div class="viewProduct viewProduct1">
+            <div class="phaseModel"></div>
+            <div class="phaseT">
+              <div class="frontT"></div>
+              <div class="backT"></div>
+            </div>
+            <div class="phaseInfo">
+              <div class="btnAddProduct">
+                <div class="infoT">
+                  <p class="infoName">Corpse Collector</p>
+                  <p class="infoPrice">$15</p>
+                </div>
+                <button class="addProduct">
+                  <img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/ios-glyphs/f2f2f2/30/plus-math.png"
+                    alt="plus-math"
+                  />
+                </button>
+              </div>
+
+              <div class="bgT"></div>
+            </div>
+          </div>
+          <div class="viewProduct viewProduct2">
+            <div class="phaseModel"></div>
+            <div class="phaseT">
+              <div class="frontT"></div>
+              <div class="backT"></div>
+            </div>
+            <div class="phaseInfo">
+              <div class="btnAddProduct">
+                <div class="infoT">
+                  <p class="infoName">Archaeologist</p>
+                  <p class="infoPrice">$15</p>
+                </div>
+                <button class="addProduct">
+                  <img
+                    width="30"
+                    height="30"
+                    src="https://img.icons8.com/ios-glyphs/f2f2f2/30/plus-math.png"
+                    alt="plus-math"
+                  />
+                </button>
+              </div>
+
+              <div class="bgT"></div>
+            </div>
+          </div>
+          <div class="viewProduct viewProduct3">
             <div class="phaseModel"></div>
             <div class="phaseT">
               <div class="frontT"></div>
@@ -91,10 +141,10 @@
               <div class="bgT"></div>
             </div>
           </div>
-          <div class="numberPageBar">
-            <div class="lineForPro">
-              <div class="lineForProNew new1"></div>
-              <div class="lineForProNew new2"></div>
+          <div class="numberPageBar hide">
+            <div class="lineForPro hide">
+              <div class="lineForProNew new1 hide"></div>
+              <div class="lineForProNew new2 hide"></div>
             </div>
           </div>
         </div>
@@ -107,6 +157,16 @@
           <div class="bannerWarning rotation1"></div>
         </div>
       </div>
+      <script type="module" src="./gsapScroll.js"></script>
+      <!-- Popup Bag - Thêm popup này để hiện túi đồ -->
+      <div class="popupBag">
+        <div class="popupContent">
+          <h2>Bag</h2>
+          <p>Bag content here...</p>
+        </div>
+      </div>
+      <!-- Script xử lý popup Bag - đã chuyển sang main.js -->
+      <script src="./main.js"></script>
     </div>
   </body>
 </html>
