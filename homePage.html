@@ -1,172 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./homeStyle.css" />
-  </head>
-  <!-- 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./homeStyle.css" />
+</head>
+<!-- 
    -->
-  <!--  -->
+<!--  -->
 
-  <body>
-    <div class="pageHome">
-      <div class="header">
-        <div class="headerBlock">
-          <div class="headerLeft">
-            <div class="menu">
-              <img
-                width="32"
-                height="32"
-                src="https://img.icons8.com/ffffff/sf-black/64/menu.png"
-                alt="menu"
-              />
-            </div>
-            <div
-              class="namePage"
-              scroll-behavior="smooth"
-              onclick="window.location.href='#pageHome'"
-            >
-              Home
-            </div>
+<body>
+  <div class="pageHome">
+    <div class="header">
+      <div class="headerBlock">
+        <div class="headerLeft">
+          <div class="menu">
+            <img width="32" height="32" src="https://img.icons8.com/ffffff/sf-black/64/menu.png" alt="menu" />
           </div>
-          <div class="headerRight">
-            <div class="bagBtn">Bag</div>
-            <div class="iconBag">
-              <img
-                width="24"
-                height="24"
-                src="https://img.icons8.com/ffffff/tiny-glyph/16/product.png"
-                alt="product"
-              />
-            </div>
+          <div class="namePage" scroll-behavior="smooth" onclick="window.location.href='#pageHome'">
+            Home
+          </div>
+        </div>
+        <div class="headerRight">
+          <div class="bagBtn">Bag</div>
+          <div class="iconBag">
+            <img width="24" height="24" src="https://img.icons8.com/ffffff/tiny-glyph/16/product.png" alt="product" />
           </div>
         </div>
       </div>
-      <div class="pageLayer2">
-        <div class="boxVideo">
-          <video autoplay loop muted src="./src/21video.mp4"></video>
-          <div class="logoWork"></div>
-          <div class="filter"></div>
-          <div class="video"></div>
-          <div class="warning1"></div>
-          <div class="warning2" id="pageHome"></div>
-        </div>
-        <div class="warningSecond">
-          <div class="iconWarning"></div>
-
-          <p class="wText">This is not a brand, this is a confession</p>
-          <p class="RedText">We are workaholishit</p>
-        </div>
+    </div>
+    <div class="pageLayer2">
+      <div class="boxVideo">
+        <video autoplay loop muted src="./src/21video.mp4"></video>
+        <div class="logoWork"></div>
+        <div class="filter"></div>
+        <div class="video"></div>
+        <div class="warning1"></div>
+        <div class="warning2" id="pageHome"></div>
       </div>
-      <div class="pageLayer3">
-        <div class="newProduct">
-          <div class="subHeaderOfProduct">
-            <p class="new">new</p>
-            <p class="viewAll">all</p>
-          </div>
-          <div class="viewProduct viewProduct1">
-            <div class="phaseModel"></div>
+      <div class="warningSecond">
+        <div class="iconWarning"></div>
+
+        <p class="wText">This is not a brand, this is a confession</p>
+        <p class="RedText">We are workaholishit</p>
+      </div>
+    </div>
+    <div class="subHeaderOfProduct">
+      <p class="new">new</p>
+      <p class="viewAll">all</p>
+    </div>
+    <div class="pageLayer3 swiper">
+
+      <div class="wrapper">
+
+        <div class="newProduct swiper-wrapper">
+
+
+          <div class="viewProduct viewProduct1 swiper-slide">
+            <div class="phaseModel title" data-swiper-parallax="-400"></div>
             <div class="phaseT">
-              <div class="frontT"></div>
-              <div class="backT"></div>
+              <div class="frontT subtitle" data-swiper-parallax="-250"></div>
+              <div class="backT subtitle" data-swiper-parallax="-350"></div>
             </div>
             <div class="phaseInfo">
-              <div class="btnAddProduct">
-                <div class="infoT">
-                  <p class="infoName">Corpse Collector</p>
+              <div class="btnAddProduct text" data-swiper-parallax="-150" data-swiper-parallax-duration="600">
+                <div class="infoT ">
+                  <p class="infoName ">Corpse Collector</p>
                   <p class="infoPrice">$15</p>
                 </div>
                 <button class="addProduct">
-                  <img
-                    width="30"
-                    height="30"
-                    src="https://img.icons8.com/ios-glyphs/f2f2f2/30/plus-math.png"
-                    alt="plus-math"
-                  />
+                  <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/f2f2f2/30/plus-math.png"
+                    alt="plus-math" />
                 </button>
               </div>
 
-              <div class="bgT"></div>
+              <div class="bgT" data-swiper-parallax="-200"></div>
             </div>
           </div>
-          <div class="viewProduct viewProduct2">
-            <div class="phaseModel"></div>
+
+
+          <div class="viewProduct viewProduct2 swiper-slide">
+            <div class="phaseModel title" data-swiper-parallax="-400"></div>
             <div class="phaseT">
-              <div class="frontT"></div>
-              <div class="backT"></div>
+              <div class="frontT subtitle" data-swiper-parallax="-250"></div>
+              <div class="backT subtitle" data-swiper-parallax="-350"></div>
             </div>
             <div class="phaseInfo">
-              <div class="btnAddProduct">
-                <div class="infoT">
+              <div class="btnAddProduct text" data-swiper-parallax="-150" data-swiper-parallax-duration="600">
+                <div class="infoT ">
                   <p class="infoName">Archaeologist</p>
                   <p class="infoPrice">$15</p>
                 </div>
                 <button class="addProduct">
-                  <img
-                    width="30"
-                    height="30"
-                    src="https://img.icons8.com/ios-glyphs/f2f2f2/30/plus-math.png"
-                    alt="plus-math"
-                  />
+                  <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/f2f2f2/30/plus-math.png"
+                    alt="plus-math" />
                 </button>
               </div>
 
-              <div class="bgT"></div>
+              <div class="bgT" data-swiper-parallax="-200"></div>
             </div>
           </div>
-          <div class="viewProduct viewProduct3">
-            <div class="phaseModel"></div>
+
+
+          <div class="viewProduct viewProduct3 swiper-slide">
+            <div class="phaseModel title" data-swiper-parallax="-400"></div>
             <div class="phaseT">
-              <div class="frontT"></div>
-              <div class="backT"></div>
+              <div class="frontT subtitle" data-swiper-parallax="-250"></div>
+              <div class="backT subtitle" data-swiper-parallax="-350"></div>
             </div>
             <div class="phaseInfo">
-              <div class="btnAddProduct">
-                <div class="infoT">
+              <div class="btnAddProduct text" data-swiper-parallax="-150" data-swiper-parallax-duration="600">
+                <div class="infoT ">
                   <p class="infoName">Mystery Pryer</p>
                   <p class="infoPrice">$15</p>
                 </div>
                 <button class="addProduct">
-                  <img
-                    width="30"
-                    height="30"
-                    src="https://img.icons8.com/ios-glyphs/f2f2f2/30/plus-math.png"
-                    alt="plus-math"
-                  />
+                  <img width="30" height="30" src="https://img.icons8.com/ios-glyphs/f2f2f2/30/plus-math.png"
+                    alt="plus-math" />
                 </button>
               </div>
 
-              <div class="bgT"></div>
+              <div class="bgT" data-swiper-parallax="-200"></div>
             </div>
           </div>
-          <div class="numberPageBar hide">
-            <div class="lineForPro hide">
-              <div class="lineForProNew new1 hide"></div>
-              <div class="lineForProNew new2 hide"></div>
-            </div>
-          </div>
+
+
+
         </div>
-      </div>
-      <div class="pageLayer1">
-        <div class="bgFooter">
-          <div class="textOnfooter"></div>
-          <div class="bannerWarning rotation3"></div>
-          <div class="bannerWarning rotation2"></div>
-          <div class="bannerWarning rotation1"></div>
+        <div class="wrapper-scorllBar">
+
+          <div class="swiper-scrollbar"></div>
+
         </div>
+
       </div>
-      <script type="module" src="./gsapScroll.js"></script>
-      <!-- Popup Bag - Thêm popup này để hiện túi đồ -->
-      <div class="popupBag">
-        <div class="popupContent">
-          <h2>Bag</h2>
-          <p>Bag content here...</p>
-        </div>
-      </div>
-      <!-- Script xử lý popup Bag - đã chuyển sang main.js -->
-      <script src="./main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </div>
-  </body>
+    <div class="pageLayer1">
+      <div class="bgFooter">
+        <div class="textOnfooter"></div>
+        <div class="bannerWarning rotation3"></div>
+        <div class="bannerWarning rotation2"></div>
+        <div class="bannerWarning rotation1"></div>
+      </div>
+    </div>
+    <script type="module" src="./gsapScroll.js"></script>
+    <!-- Popup Bag - Thêm popup này để hiện túi đồ -->
+    <div class="popupBag">
+      <div class="popupContent">
+        <h2>Bag</h2>
+        <p>Bag content here...</p>
+      </div>
+    </div>
+    <!-- Script xử lý popup Bag - đã chuyển sang main.js -->
+    <script src="./main.js"></script>
+  </div>
+</body>
+
 </html>

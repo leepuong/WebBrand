@@ -1,611 +1,679 @@
+:root {
+  --swiper-scrollbar-border-radius: 10px;
+  --swiper-scrollbar-top: auto;
+  --swiper-scrollbar-bottom: 4px;
+  --swiper-scrollbar-left: auto;
+  --swiper-scrollbar-right: 4px;
+  --swiper-scrollbar-sides-offset: 1%;
+  --swiper-scrollbar-bg-color: rgba(255, 255, 255, 0.1);
+  --swiper-scrollbar-drag-bg-color: rgba(255, 255, 255, 0.5);
+  --swiper-scrollbar-size: 4px;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 body {
-    background-color: #0b0a08;
-    color: #f2f2f2;
-    -webkit-font-smoothing: antialiased;
+  background-color: #0b0a08;
+  color: #f2f2f2;
+  -webkit-font-smoothing: antialiased;
 }
 
 body,
 input,
 button {
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
-    background-image: url(src/bg1.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 10px;
+  background-image: url(src/bg1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #1d0807;
+  background-color: #1d0807;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #500403;
+  background: #500403;
 }
 
 body {
-    /* height: 10000px; */
+  /* height: 10000px; */
 }
 
 .boxVideo {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 2;
-    height: fit-content;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  height: fit-content;
 }
-
 
 /*  */
 
 video {
-    width: 100%;
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    z-index: 2;
+  width: 100%;
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .filter {
-    position: absolute;
-    background-color: rgb(142, 0, 0);
-    opacity: 0.15;
-    z-index: 3;
-    width: 100%;
-    top: 0;
-    left: 0;
-    aspect-ratio: 2 / 1;
+  position: absolute;
+  background-color: rgb(142, 0, 0);
+  opacity: 0.15;
+  z-index: 3;
+  width: 100%;
+  top: 0;
+  left: 0;
+  aspect-ratio: 2 / 1;
 }
 
 .pageLayer2 {
-    margin: 55px 0;
+  margin: 55px 0;
 }
 
 .logoWork {
-    content: url('./src/worlaholic.svg');
-    position: absolute;
-    aspect-ratio: 2 / 1;
-    top: 50%;
-    left: 50%;
-    transform: translate( -50%, -50%);
-    width: 30%;
-    z-index: 4;
+  content: url("./src/worlaholic.svg");
+  position: absolute;
+  aspect-ratio: 2 / 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  z-index: 4;
 }
 
 .warning1 {
-    position: absolute;
-    background: url('./src/warning1.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: repeat-x;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 55px;
-    z-index: 5;
+  position: absolute;
+  background: url("./src/warning1.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  z-index: 5;
 }
 
 .warning2 {
-    position: absolute;
-    background: url('./src/warning2.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: repeat-x;
-    bottom: 100%;
-    left: 0;
-    width: 100%;
-    height: 55px;
-    z-index: 5;
+  position: absolute;
+  background: url("./src/warning2.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat-x;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 55px;
+  z-index: 5;
 }
 
 .warningSecond {
-    margin: 110px 0 55px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    /* background-color: #0b0a08; */
+  margin: 110px 0 55px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #0b0a08; */
 }
 
 .iconWarning {
-    content: url('./src/warningIcon.svg');
-    width: 10%;
-    aspect-ratio: 1 / 1;
+  content: url("./src/warningIcon.svg");
+  width: 10%;
+  aspect-ratio: 1 / 1;
 }
 
 .wText {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #f2f2f2;
-    text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f2f2f2;
+  text-align: center;
 }
 
 .RedText {
-    color: #e10201;
-    font-size: 1.5rem;
-    font-weight: 700;
+  color: #e10201;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .header {
-    position: fixed;
-    z-index: 40;
-    top: 0;
-    left: 0;
-    width: 100%;
+  position: fixed;
+  z-index: 40;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .headerBlock {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    height: 55px;
-    align-items: center;
-    padding: 10px 60px 0px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 55px;
+  align-items: center;
+  padding: 10px 60px 0px;
 }
 
 .headerLeft {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .headerRight {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .menu {
-    padding: 5px;
-    line-height: 10px;
-    background-color: #ff15152b;
-    backdrop-filter: blur(3px);
-    border-radius: 5px;
+  padding: 5px;
+  line-height: 10px;
+  background-color: #ff15152b;
+  backdrop-filter: blur(3px);
+  border-radius: 5px;
 }
 
 .namePage {
-    line-height: 32px;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 5px 17px;
-    background-color: #ff15152b;
-    backdrop-filter: blur(5px);
-    scroll-behavior: smooth;
-    border-radius: 5px;
-    cursor: pointer;
+  line-height: 32px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px 17px;
+  background-color: #ff15152b;
+  backdrop-filter: blur(5px);
+  scroll-behavior: smooth;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .iconBag {
-    padding: 9px;
-    line-height: 10px;
-    background-color: #ff15152b;
-    backdrop-filter: blur(3px);
-    border-radius: 5px;
+  padding: 9px;
+  line-height: 10px;
+  background-color: #ff15152b;
+  backdrop-filter: blur(3px);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .bagBtn {
-    line-height: 32px;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 5px 17px;
-    background-color: #ff15152b;
-    backdrop-filter: blur(5px);
-    scroll-behavior: smooth;
-    border-radius: 5px;
-    cursor: pointer;
+  line-height: 32px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px 17px;
+  background-color: #ff15152b;
+  backdrop-filter: blur(5px);
+  scroll-behavior: smooth;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .subHeaderOfProduct {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 120px;
 }
 
 .new {
-    font-weight: 600;
-    font-size: 18px;
-    text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .viewAll {
-    line-height: 32px;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 5px 17px;
-    background-color: #ff15152b;
-    backdrop-filter: blur(5px);
-    scroll-behavior: smooth;
-    border-radius: 5px;
-    text-transform: uppercase;
-    cursor: pointer;
+  line-height: 32px;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 5px 17px;
+  background-color: #ff15152b;
+  backdrop-filter: blur(5px);
+  scroll-behavior: smooth;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .pageLayer1 {
-    width: 100%;
-    position: static;
-    /* z-index: -100; */
-    bottom: 0;
-    /* position: relative; */
-    /* display: none; */
-    /* position: absolute; */
+  width: 100%;
+  position: static;
+  /* z-index: -100; */
+  bottom: 0;
+  /* position: relative; */
+  /* display: none; */
+  /* position: absolute; */
 }
 
 .pageLayer2 {
-    width: 100%;
-    /* position: absolute; */
-    position: relative;
-    z-index: 28;
+  width: 100%;
+  /* position: absolute; */
+  position: relative;
+  z-index: 28;
 }
 
 .pageLayer3 {
-    width: 100%;
-    /* position: absolute; */
-    position: relative;
-    /* display: none; */
-    padding: 20px 120px 20px;
-    overflow: hidden;
-    z-index: 30;
-    background-color: #0b0a08;
+  width: 100%;
+  /* position: absolute; */
+  position: relative;
+  /* display: none; */
+  padding: 20px 120px 20px;
+  overflow: hidden;
+  z-index: 30;
+  background-color: #0b0a08;
 }
 
 .viewProduct {
-    background-color: #0000003b;
-    width: 100%;
-    aspect-ratio: 3/2;
-    display: flex;
-    gap: 20px;
-    border-radius: 10px;
-    margin: 100px 0 20px;
-    padding: 10px;
+  background-color: #0000003b;
+  width: 100%;
+  aspect-ratio: 3/2;
+  display: flex;
+  gap: 20px;
+  border-radius: 10px;
+  margin: 100px 0 20px;
+  padding: 10px;
 }
 
-.viewProduct>div {
-    flex: 1;
-    /* border: 1px solid #ccc; */
-    aspect-ratio: 1 / 3;
+.viewProduct > div {
+  flex: 1;
+  /* border: 1px solid #ccc; */
+  aspect-ratio: 1 / 3;
 }
 
 .phaseT {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.phaseT>div {
-    flex: 1;
-    /* margin: 15px; */
-    /* border: 1px solid #ccc; */
+.phaseT > div {
+  flex: 1;
+  /* margin: 15px; */
+  /* border: 1px solid #ccc; */
 }
 
 .phaseInfo {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.phaseInfo>div {
-    flex: 1;
-    /* border: 1px solid #ccc; */
+.phaseInfo > div {
+  flex: 1;
+  /* border: 1px solid #ccc; */
 }
 
 .viewProduct1 .phaseModel {
-    background-image: url(/src/Corpse_Collector_model.png);
-    background-size: contain;
-    /* background-position: -40px center; */
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url(/src/Corpse_Collector_model.png);
+  background-size: contain;
+  /* background-position: -40px center; */
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .viewProduct1 .frontT {
-    background-image: url(/src/Corpse_Collector_F_V1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(/src/Corpse_Collector_F_V1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .viewProduct1 .backT {
-    background-image: url(/src/Corpse_Collector_B_V1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    ;
+  background-image: url(/src/Corpse_Collector_B_V1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .viewProduct2 .phaseModel {
-    background-image: url(/src/Archaeologist_model.png);
-    background-size: contain;
-    /* background-position: -40px center; */
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url(/src/Archaeologist_model.png);
+  background-size: contain;
+  /* background-position: -40px center; */
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .viewProduct2 .frontT {
-    background-image: url(/src/Archaeologist_F_V1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(/src/Archaeologist_F_V1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .viewProduct2 .backT {
-    background-image: url(/src/Archaeologist_B_V1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    ;
+  background-image: url(/src/Archaeologist_B_V1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .viewProduct3 .phaseModel {
-    background-image: url(/src/Mystery_Pryer_model.png);
-    background-size: contain;
-    /* background-position: -40px center; */
-    background-position: center;
-    background-repeat: no-repeat;
+  background-image: url(/src/Mystery_Pryer_model.png);
+  background-size: contain;
+  /* background-position: -40px center; */
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .viewProduct3 .frontT {
-    background-image: url(/src/Mystery_Pryer_F_V1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background-image: url(/src/Mystery_Pryer_F_V1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .viewProduct3 .backT {
-    background-image: url(/src/Mystery_Pryer_B_V1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    ;
+  background-image: url(/src/Mystery_Pryer_B_V1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-
 
 /* Hiệu ứng morph trigger cho .bgT - chuyển đổi giữa 3 ảnh nền */
 
 @keyframes morphBgT1 {
-    0% {
-        background-image: url(/src/Corpse_Collector_Bg17.png);
-    }
-    25% {
-        background-image: url(/src/Corpse_Collector_Bg50.png);
-    }
-    50% {
-        background-image: url(/src/Corpse_Collector_Bg100.png);
-    }
-    75% {
-        background-image: url(/src/Corpse_Collector_Bg50.png);
-    }
-    100% {
-        background-image: url(/src/Corpse_Collector_Bg17.png);
-    }
+  0% {
+    background-image: url(/src/Corpse_Collector_Bg17.png);
+  }
+  25% {
+    background-image: url(/src/Corpse_Collector_Bg50.png);
+  }
+  50% {
+    background-image: url(/src/Corpse_Collector_Bg100.png);
+  }
+  75% {
+    background-image: url(/src/Corpse_Collector_Bg50.png);
+  }
+  100% {
+    background-image: url(/src/Corpse_Collector_Bg17.png);
+  }
 }
 
 .viewProduct1 .bgT {
-    background-image: url(/src/Corpse_Collector_Bg17.png);
-    background-size: cover;
-    background-position: center;
-    margin: 15px;
-    border-radius: 10px;
-    animation: morphBgT1 10s linear infinite;
+  background-image: url(/src/Corpse_Collector_Bg17.png);
+  background-size: cover;
+  background-position: center;
+  margin: 15px;
+  border-radius: 10px;
+  animation: morphBgT1 10s linear infinite;
 }
 
 @keyframes morphBgT2 {
-    0% {
-        background-image: url(/src/Archaeologist_Bg17.png);
-    }
-    25% {
-        background-image: url(/src/Archaeologist_Bg50.png);
-    }
-    50% {
-        background-image: url(/src/Archaeologist_Bg100.png);
-    }
-    75% {
-        background-image: url(/src/Archaeologist_Bg50.png);
-    }
-    100% {
-        background-image: url(/src/Archaeologist_Bg17.png);
-    }
+  0% {
+    background-image: url(/src/Archaeologist_Bg17.png);
+  }
+  25% {
+    background-image: url(/src/Archaeologist_Bg50.png);
+  }
+  50% {
+    background-image: url(/src/Archaeologist_Bg100.png);
+  }
+  75% {
+    background-image: url(/src/Archaeologist_Bg50.png);
+  }
+  100% {
+    background-image: url(/src/Archaeologist_Bg17.png);
+  }
 }
 
 .viewProduct2 .bgT {
-    background-image: url(/src/Archaeologist_Bg17.png);
-    background-size: cover;
-    background-position: center;
-    margin: 15px;
-    border-radius: 10px;
-    animation: morphBgT2 10s linear infinite;
+  background-image: url(/src/Archaeologist_Bg17.png);
+  background-size: cover;
+  background-position: center;
+  margin: 15px;
+  border-radius: 10px;
+  animation: morphBgT2 10s linear infinite;
 }
 
 @keyframes morphBgT3 {
-    0% {
-        background-image: url(/src/Mystery_Pryer_Bg17.png);
-    }
-    25% {
-        background-image: url(/src/Mystery_Pryer_Bg50.png);
-    }
-    50% {
-        background-image: url(/src/Mystery_Pryer_Bg100.png);
-    }
-    75% {
-        background-image: url(/src/Mystery_Pryer_Bg50.png);
-    }
-    100% {
-        background-image: url(/src/Mystery_Pryer_Bg17.png);
-    }
+  0% {
+    background-image: url(/src/Mystery_Pryer_Bg17.png);
+  }
+  25% {
+    background-image: url(/src/Mystery_Pryer_Bg50.png);
+  }
+  50% {
+    background-image: url(/src/Mystery_Pryer_Bg100.png);
+  }
+  75% {
+    background-image: url(/src/Mystery_Pryer_Bg50.png);
+  }
+  100% {
+    background-image: url(/src/Mystery_Pryer_Bg17.png);
+  }
 }
 
 .viewProduct3 .bgT {
-    background-image: url(/src/Mystery_Pryer_Bg17.png);
-    background-size: cover;
-    background-position: center;
-    margin: 15px;
-    border-radius: 10px;
-    animation: morphBgT3 10s linear infinite;
+  background-image: url(/src/Mystery_Pryer_Bg17.png);
+  background-size: cover;
+  background-position: center;
+  margin: 15px;
+  border-radius: 10px;
+  animation: morphBgT3 10s linear infinite;
 }
 
 .infoT {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
 }
 
 .infoName {
-    font-size: 42px;
-    font-weight: 400;
-    color: #f2f2f2;
+  font-size: 42px;
+  font-weight: 400;
+  color: #f2f2f2;
 }
 
 .infoPrice {
-    font-size: 32px;
-    font-weight: 100;
-    color: #f2f2f25c;
+  font-size: 32px;
+  font-weight: 100;
+  color: #f2f2f25c;
 }
 
 .addProduct {
-    background-color: #910000a8;
-    width: 42px;
-    height: 42px;
-    margin: 15px;
-    border: none;
-    border-radius: 7px;
+  background-color: #910000a8;
+  width: 42px;
+  height: 42px;
+  margin: 15px;
+  border: none;
+  border-radius: 7px;
 }
 
 .btnAddProduct {
-    display: flex;
-    justify-content: space-between;
-    align-content: space-around;
-    flex-direction: column;
-    align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .numberPageBar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .lineForPro {
-    display: flex;
-    gap: 5px;
-    width: 50%;
+  display: flex;
+  gap: 5px;
+  width: 50%;
 }
 
 .lineForProNew {
-    width: 100%;
-    border-radius: 1px;
-    height: 3px;
-    background-color: #f2f2f239;
-    margin: 10px 0;
+  width: 100%;
+  border-radius: 1px;
+  height: 3px;
+  background-color: #f2f2f239;
+  margin: 10px 0;
 }
 
 .new1 {
-    background-color: #f2f2f299 !important;
+  background-color: #f2f2f299 !important;
 }
 
 .bgFooter {
-    background-image: url('./src/bgText.png');
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    aspect-ratio: 4.5/1;
-    position: relative;
-    overflow: hidden;
+  background-image: url("./src/bgText.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 4.5/1;
+  position: relative;
+  overflow: hidden;
 }
 
 .textOnfooter {
-    background-image: url('./src/textOnbg.png');
-    background-size: cover;
-    background-position: center;
-    aspect-ratio: 5/1;
-    width: 85%;
-    position: absolute;
-    z-index: 11;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  background-image: url("./src/textOnbg.png");
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 5/1;
+  width: 85%;
+  position: absolute;
+  z-index: 11;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .bannerWarning {
-    background-image: url(/src/warning1.png);
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    width: 60%;
-    height: 55px;
+  background-image: url(/src/warning1.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 60%;
+  height: 55px;
 }
 
 .rotation1 {
-    z-index: 15;
-    top: 61%;
-    left: 48%;
-    transform: rotate(146deg);
-    box-shadow: 11px -10px 18px #00000094;
+  z-index: 15;
+  top: 61%;
+  left: 48%;
+  transform: rotate(146deg);
+  box-shadow: 11px -10px 18px #00000094;
 }
 
 .rotation2 {
-    z-index: 13;
-    top: 45%;
-    left: 49%;
-    transform: rotate(37deg);
-    box-shadow: 11px -10px 18px #00000094;
+  z-index: 13;
+  top: 45%;
+  left: 49%;
+  transform: rotate(37deg);
+  box-shadow: 11px -10px 18px #00000094;
 }
 
 .rotation3 {
-    z-index: 14;
-    top: 28%;
-    left: 54%;
-    transform: rotate(43deg);
-    box-shadow: 11px -10px 18px #00000094;
+  z-index: 14;
+  top: 28%;
+  left: 54%;
+  transform: rotate(43deg);
+  box-shadow: 11px -10px 18px #00000094;
 }
 
 .pageHome {
-    position: relative;
-    background-color: #0b0a08;
+  position: relative;
+  background-color: #0b0a08;
 }
-
 
 /* Popup Bag - CSS cho popup và hiệu ứng slide */
 
 .popupBag {
-    position: fixed;
-    top: 0;
-    right: -100vh;
-    /* Ẩn ngoài màn hình bên phải */
-    width: 40%;
-    height: 100vh;
-    background: #fff;
-    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-    transition: right 0.5s cubic-bezier(.77, 0, .18, 1);
-    z-index: 39;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: fixed;
+  top: 0;
+  right: -100vh;
+  /* Ẩn ngoài màn hình bên phải */
+  width: 40%;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  z-index: 39;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .popupBag.active {
-    right: 0;
+  right: 0;
 }
 
 .popupContent {
-    text-align: center;
+  text-align: center;
+}
+
+.wrapper {
+  overflow: hidden;
+  /* margin: 0 100px; */
+}
+.wrapper-scorllBar {
+  overflow: hidden;
+  width: 80%;
+  display: flex;
+}
+
+.swiper-scrollbar {
+  border-radius: var(--swiper-scrollbar-border-radius, 10px);
+  position: relative;
+  touch-action: none;
+  background: var(--swiper-scrollbar-bg-color, rgba(255, 255, 255, 0.1));
+}
+.swiper-scrollbar-disabled > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-disabled {
+  display: none !important;
+}
+.swiper-horizontal > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+  position: absolute;
+  text-align: center;
+  /* left: 0;
+  transform: translateX(-40%); */
+  bottom: var(--swiper-scrollbar-bottom, 4px);
+  top: var(--swiper-scrollbar-top, auto);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+  height: var(--swiper-scrollbar-size, 4px);
+  width: calc(50% - 2 * var(--swiper-scrollbar-sides-offset, 15%));
+  margin: 0 0 15px 0;
+}
+.swiper-vertical > .swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-vertical {
+  position: absolute;
+  left: var(--swiper-scrollbar-left, auto);
+  right: var(--swiper-scrollbar-right, 4px);
+  top: var(--swiper-scrollbar-sides-offset, 1%);
+  z-index: 50;
+  width: var(--swiper-scrollbar-size, 4px);
+  height: calc(100% - 2 * var(--swiper-scrollbar-sides-offset, 1%));
+}
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: var(--swiper-scrollbar-drag-bg-color, rgba(255, 255, 255, 0.5));
+  border-radius: var(--swiper-scrollbar-border-radius, 10px);
+  left: 0;
+  top: 0;
+}
+.swiper-scrollbar-cursor-drag {
+  cursor: move;
+}
+.swiper-scrollbar-lock {
+  display: none;
 }
