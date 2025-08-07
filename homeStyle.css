@@ -10,6 +10,90 @@
   --swiper-scrollbar-size: 4px;
 }
 
+.Mystery_Pryer_T_F {
+  background-image: url(/src/Mystery_Pryer_F_V1.png);
+}
+.Mystery_Pryer_T_B {
+  background-image: url(/src/Mystery_Pryer_B_V1.png);
+}
+.Mystery_Pryer_T_BG {
+  background-image: url(/src/Mystery_Pryer_Bg17.png);
+  animation: morphBgMystery_Pryer 10s linear infinite;
+}
+.Archaeologist_T_F {
+  background-image: url(/src/Archaeologist_F_V1.png);
+}
+.Archaeologist_T_B {
+  background-image: url(/src/Archaeologist_B_V1.png);
+}
+.Archaeologist_T_BG {
+  background-image: url(/src/Archaeologist_Bg17.png);
+  animation: morphBgArchaeologist 10s linear infinite;
+}
+.Corpse_Collector_T_F {
+  background-image: url(/src/Corpse_Collector_F_V1.png);
+}
+.Corpse_Collector_T_B {
+  background-image: url(/src/Corpse_Collector_B_V1.png);
+}
+.Corpse_Collector_T_BG {
+  background-image: url(/src/Corpse_Collector_Bg17.png);
+  animation: morphBgCorpse_Collector 10s linear infinite;
+}
+
+@keyframes morphBgCorpse_Collector {
+  0% {
+    background-image: url(/src/Corpse_Collector_Bg17.png);
+  }
+  25% {
+    background-image: url(/src/Corpse_Collector_Bg50.png);
+  }
+  50% {
+    background-image: url(/src/Corpse_Collector_Bg100.png);
+  }
+  75% {
+    background-image: url(/src/Corpse_Collector_Bg50.png);
+  }
+  100% {
+    background-image: url(/src/Corpse_Collector_Bg17.png);
+  }
+}
+@keyframes morphBgArchaeologist {
+  0% {
+    background-image: url(/src/Archaeologist_Bg17.png);
+  }
+  25% {
+    background-image: url(/src/Archaeologist_Bg50.png);
+  }
+  50% {
+    background-image: url(/src/Archaeologist_Bg100.png);
+  }
+  75% {
+    background-image: url(/src/Archaeologist_Bg50.png);
+  }
+  100% {
+    background-image: url(/src/Archaeologist_Bg17.png);
+  }
+}
+
+@keyframes morphBgMystery_Pryer {
+  0% {
+    background-image: url(/src/Mystery_Pryer_Bg17.png);
+  }
+  25% {
+    background-image: url(/src/Mystery_Pryer_Bg50.png);
+  }
+  50% {
+    background-image: url(/src/Mystery_Pryer_Bg100.png);
+  }
+  75% {
+    background-image: url(/src/Mystery_Pryer_Bg50.png);
+  }
+  100% {
+    background-image: url(/src/Mystery_Pryer_Bg17.png);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -330,14 +414,12 @@ video {
 }
 
 .viewProduct1 .frontT {
-  background-image: url(/src/Corpse_Collector_F_V1.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .viewProduct1 .backT {
-  background-image: url(/src/Corpse_Collector_B_V1.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -352,14 +434,12 @@ video {
 }
 
 .viewProduct2 .frontT {
-  background-image: url(/src/Archaeologist_F_V1.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .viewProduct2 .backT {
-  background-image: url(/src/Archaeologist_B_V1.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -374,14 +454,12 @@ video {
 }
 
 .viewProduct3 .frontT {
-  background-image: url(/src/Mystery_Pryer_F_V1.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .viewProduct3 .backT {
-  background-image: url(/src/Mystery_Pryer_B_V1.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -389,85 +467,25 @@ video {
 
 /* Hiệu ứng morph trigger cho .bgT - chuyển đổi giữa 3 ảnh nền */
 
-@keyframes morphBgT1 {
-  0% {
-    background-image: url(/src/Corpse_Collector_Bg17.png);
-  }
-  25% {
-    background-image: url(/src/Corpse_Collector_Bg50.png);
-  }
-  50% {
-    background-image: url(/src/Corpse_Collector_Bg100.png);
-  }
-  75% {
-    background-image: url(/src/Corpse_Collector_Bg50.png);
-  }
-  100% {
-    background-image: url(/src/Corpse_Collector_Bg17.png);
-  }
-}
-
 .viewProduct1 .bgT {
-  background-image: url(/src/Corpse_Collector_Bg17.png);
   background-size: cover;
   background-position: center;
   margin: 15px;
   border-radius: 10px;
-  animation: morphBgT1 10s linear infinite;
-}
-
-@keyframes morphBgT2 {
-  0% {
-    background-image: url(/src/Archaeologist_Bg17.png);
-  }
-  25% {
-    background-image: url(/src/Archaeologist_Bg50.png);
-  }
-  50% {
-    background-image: url(/src/Archaeologist_Bg100.png);
-  }
-  75% {
-    background-image: url(/src/Archaeologist_Bg50.png);
-  }
-  100% {
-    background-image: url(/src/Archaeologist_Bg17.png);
-  }
 }
 
 .viewProduct2 .bgT {
-  background-image: url(/src/Archaeologist_Bg17.png);
   background-size: cover;
   background-position: center;
   margin: 15px;
   border-radius: 10px;
-  animation: morphBgT2 10s linear infinite;
-}
-
-@keyframes morphBgT3 {
-  0% {
-    background-image: url(/src/Mystery_Pryer_Bg17.png);
-  }
-  25% {
-    background-image: url(/src/Mystery_Pryer_Bg50.png);
-  }
-  50% {
-    background-image: url(/src/Mystery_Pryer_Bg100.png);
-  }
-  75% {
-    background-image: url(/src/Mystery_Pryer_Bg50.png);
-  }
-  100% {
-    background-image: url(/src/Mystery_Pryer_Bg17.png);
-  }
 }
 
 .viewProduct3 .bgT {
-  background-image: url(/src/Mystery_Pryer_Bg17.png);
   background-size: cover;
   background-position: center;
   margin: 15px;
   border-radius: 10px;
-  animation: morphBgT3 10s linear infinite;
 }
 
 .infoT {
@@ -593,29 +611,162 @@ video {
 
 /* Popup Bag - CSS cho popup và hiệu ứng slide */
 
-.popupBag {
-  position: fixed;
-  top: 0;
-  right: -100vh;
-  /* Ẩn ngoài màn hình bên phải */
-  width: 40%;
-  height: 100vh;
-  background: #fff;
-  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
-  transition: right 0.5s cubic-bezier(0.77, 0, 0.18, 1);
-  z-index: 39;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .popupBag.active {
   right: 0;
 }
 
 .popupContent {
   text-align: center;
+  width: 80%;
 }
+.popupBag {
+  position: fixed;
+  top: 0;
+  right: -100vh;
+  width: 40%;
+  height: 100vh;
+  background: #0b0a08;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+  z-index: 39;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 70px;
+}
+
+.checkOut {
+  width: 80%;
+  text-align: center;
+}
+
+.subTotal {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.checkOutBtn {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #840606;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out, font-size 0.2s ease-in;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.checkOutBtn:hover {
+  background-color: #ab0c0c;
+  font-size: 16.2px;
+}
+
+.itemBag {
+  margin: 40px 0;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.imgItem {
+  background-size: cover;
+  background-position: center;
+  /* margin: 15px; */
+  border-radius: 10px;
+  height: 20vh;
+  aspect-ratio: 1 /1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemImgT-Shirt {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 15vh;
+
+  aspect-ratio: 1/1;
+  z-index: 40;
+  position: absolute;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  transition: transform 0.5s ease, top 0.5s ease;
+}
+.imgItem:hover .itemImgT-Shirt {
+  transform: scale(1.05);
+  top: 11.5%;
+  /* top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.contentItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 11px; */
+  justify-content: space-between;
+}
+.infoItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.nameAndPriceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 200px;
+}
+
+.nameAndPriceItem > h4 {
+  font-size: 18px;
+}
+.removeItem {
+}
+.qty-input {
+  /* background-color: #500403; */
+  height: 40px;
+  border: 0.5px solid #cccccc57;
+  border-radius: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.qty-input span {
+  width: 100%;
+  text-align: center;
+  /* line-height: 10px; */
+  font-size: 18px;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+
+.qty-input span.product-qty {
+  font-size: 16px;
+  font-weight: 500;
+  border-right: 0.5px solid #cccccc22;
+  border-left: 0.5px solid #cccccc22;
+  pointer-events: none;
+}
+
+/* bag css */
 
 .wrapper {
   overflow: hidden;
@@ -676,4 +827,34 @@ video {
 }
 .swiper-scrollbar-lock {
   display: none;
+}
+
+.background-image {
+  position: fixed;
+  bottom: 0;
+  z-index: 37;
+  pointer-events: none;
+}
+
+.boxFlying {
+  height: 70px;
+  width: 3000px;
+  background-position: center;
+  background-size: contain;
+  background-image: url(/src/warning2.png);
+}
+.boxFlying1 {
+  box-shadow: 114px 20px 18px #00000094;
+}
+.boxFlying2 {
+  box-shadow: 6px 20px 18px #00000094;
+}
+.boxFlying3 {
+  box-shadow: 11px 11px 18px #00000094;
+}
+.boxFlying4 {
+  box-shadow: 11px 10px 18px #00000094;
+}
+.boxFlying5 {
+  box-shadow: 11px 15px 18px #00000094;
 }

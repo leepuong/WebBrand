@@ -59,11 +59,11 @@
         <div class="newProduct swiper-wrapper">
 
 
-          <div class="viewProduct viewProduct1 swiper-slide">
+          <div class="viewProduct viewProduct1 swiper-slide ">
             <div class="phaseModel title" data-swiper-parallax="-400"></div>
             <div class="phaseT">
-              <div class="frontT subtitle" data-swiper-parallax="-250"></div>
-              <div class="backT subtitle" data-swiper-parallax="-350"></div>
+              <div class="frontT subtitle Corpse_Collector_T_F" data-swiper-parallax="-250"></div>
+              <div class="backT subtitle Corpse_Collector_T_B" data-swiper-parallax="-350"></div>
             </div>
             <div class="phaseInfo">
               <div class="btnAddProduct text" data-swiper-parallax="-150" data-swiper-parallax-duration="600">
@@ -77,7 +77,7 @@
                 </button>
               </div>
 
-              <div class="bgT" data-swiper-parallax="-200"></div>
+              <div class="bgT Corpse_Collector_T_BG" data-swiper-parallax="-200"></div>
             </div>
           </div>
 
@@ -85,8 +85,8 @@
           <div class="viewProduct viewProduct2 swiper-slide">
             <div class="phaseModel title" data-swiper-parallax="-400"></div>
             <div class="phaseT">
-              <div class="frontT subtitle" data-swiper-parallax="-250"></div>
-              <div class="backT subtitle" data-swiper-parallax="-350"></div>
+              <div class="frontT subtitle Archaeologist_T_F" data-swiper-parallax="-250"></div>
+              <div class="backT subtitle Archaeologist_T_B" data-swiper-parallax="-350"></div>
             </div>
             <div class="phaseInfo">
               <div class="btnAddProduct text" data-swiper-parallax="-150" data-swiper-parallax-duration="600">
@@ -100,7 +100,7 @@
                 </button>
               </div>
 
-              <div class="bgT" data-swiper-parallax="-200"></div>
+              <div class="bgT Archaeologist_T_BG" data-swiper-parallax="-200"></div>
             </div>
           </div>
 
@@ -108,8 +108,8 @@
           <div class="viewProduct viewProduct3 swiper-slide">
             <div class="phaseModel title" data-swiper-parallax="-400"></div>
             <div class="phaseT">
-              <div class="frontT subtitle" data-swiper-parallax="-250"></div>
-              <div class="backT subtitle" data-swiper-parallax="-350"></div>
+              <div class="frontT subtitle Mystery_Pryer_T_F" data-swiper-parallax="-250"></div>
+              <div class="backT subtitle Mystery_Pryer_T_B" data-swiper-parallax="-350"></div>
             </div>
             <div class="phaseInfo">
               <div class="btnAddProduct text" data-swiper-parallax="-150" data-swiper-parallax-duration="600">
@@ -123,7 +123,7 @@
                 </button>
               </div>
 
-              <div class="bgT" data-swiper-parallax="-200"></div>
+              <div class="bgT Mystery_Pryer_T_BG" data-swiper-parallax="-200"></div>
             </div>
           </div>
 
@@ -149,14 +149,74 @@
     </div>
     <script type="module" src="./gsapScroll.js"></script>
     <!-- Popup Bag - Thêm popup này để hiện túi đồ -->
+    <div class="background-image">
+      <div class="boxFlying1 boxFlying"></div>
+      <div class="boxFlying2 boxFlying"></div>
+      <div class="boxFlying3 boxFlying"></div>
+      <div class="boxFlying4 boxFlying"></div>
+      <div class="boxFlying5 boxFlying"></div>
+    </div>
+
+
     <div class="popupBag">
       <div class="popupContent">
-        <h2>Bag</h2>
-        <p>Bag content here...</p>
+
+        <div class="itemBag">
+          <div class="item">
+            <div class="imgItem Archaeologist_T_BG">
+              <div class="itemImgT-Shirt Archaeologist_T_F"></div>
+            </div>
+            <div class="contentItem">
+              <div class="infoItem">
+                <div class="nameAndPriceItem">
+                  <h4>Archaeologist</h4>
+                  <p>15$</p>
+                </div>
+                <div class="removeItem"><img width="24" height="24"
+                    src="https://img.icons8.com/f3f3f3/forma-thin/24/recycle-bin.png" alt="recycle-bin" /></div>
+              </div>
+              <div class="qty-input">
+                <span class="qty-count qty-count--minus1">-</span>
+                <span class="product-qty1">01</span>
+                <span class="qty-count qty-count--add1">+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="itemBag">
+          <div class="item">
+            <div class="imgItem Corpse_Collector_T_BG">
+              <div class="itemImgT-Shirt Corpse_Collector_T_F"></div>
+            </div>
+            <div class="contentItem">
+              <div class="infoItem">
+                <div class="nameAndPriceItem">
+                  <h4>Corpse Collector</h4>
+                  <p>15$</p>
+                </div>
+                <div class="removeItem"><img width="24" height="24"
+                    src="https://img.icons8.com/f3f3f3/forma-thin/24/recycle-bin.png" alt="recycle-bin" /></div>
+              </div>
+              <div class="qty-input">
+                <span class="qty-count qty-count--minus2">-</span>
+                <span class="product-qty2">01</span>
+                <span class="qty-count qty-count--add2">+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="checkOut">
+        <div class="subTotal">
+          <p>SubTotal:</p>
+          <h3>0$</h3>
+        </div>
+        <div class="checkOutBtn">Check Out</div>
       </div>
     </div>
     <!-- Script xử lý popup Bag - đã chuyển sang main.js -->
-    <script src="./main.js"></script>
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./func.js"></script>
   </div>
 </body>
 
