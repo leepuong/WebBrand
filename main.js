@@ -4,10 +4,18 @@ import { setupBagAnimation, playBagAnimation, reverseBagAnimation } from './gsap
 const bagBtn = document.querySelector(".bagBtn");
 const iconBag = document.querySelector(".iconBag");
 const popupBag = document.querySelector(".popupBag");
+const namePage = document.querySelector(".namePage");
+const menu = document.querySelector(".menu");
+const popupMenu = document.querySelector(".popupMenu");
+
 
 setupBagAnimation();
 function toggleBagPopup() {
   popupBag.classList.toggle("active");
+  if (popupMenu.classList.contains("active")) {
+    // Popup mở - play animation
+    popupMenu.classList.toggle("active");
+}
   if (popupBag.classList.contains("active")) {
     // Popup mở - play animation
     playBagAnimation();
@@ -16,6 +24,22 @@ function toggleBagPopup() {
     reverseBagAnimation();
 }
 }
+
+
+function toggleMenuPopup() {
+  popupMenu.classList.toggle("active");
+  if (popupBag.classList.contains("active")){
+    popupBag.classList.toggle("active");
+  }
+  if (popupMenu.classList.contains("active")) {
+    // Popup mở - play animation
+    playBagAnimation();
+} else {
+    // Popup đóng - reverse animation
+    reverseBagAnimation();
+}
+}
+
 
 
 
@@ -27,6 +51,8 @@ document.addEventListener("keydown", function(e) {
 
 bagBtn.addEventListener("click", toggleBagPopup);
 iconBag.addEventListener("click", toggleBagPopup);
+menu.addEventListener("click", toggleMenuPopup);
+namePage.addEventListener("click", toggleMenuPopup);
 
 // Hiệu ứng slide giữa 2 viewProduct khi nhấn lineForProNew
 

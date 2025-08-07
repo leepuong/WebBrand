@@ -92,27 +92,28 @@ export function setupBagAnimation() {
         ease: "power4.out"
     }, 0.35)
       .to(flyingImage2, { 
+        duration: 0.55,
         y: "-105px",
         x: "-86px",
         rotate: 14,
         ease: "power4.out"
-      }, 0.35)
+      }, 0.4)
       .to(flyingImage3, { 
-        duration: 0.5,
+        duration: 0.6,
         y: "-248px",
         x: "-333px",
         rotate: 348,
         ease: "power4.out"
        }, 0.35)
       .to(flyingImage4, {
-        duration: 0.5,
+        duration: 0.65,
         y: "-26px",
         x: "-93px",
         rotate: 10,
         ease: "power4.out"
-      }, 0.35)
+      }, 0.4)
       .to(flyingImage5, { 
-        duration: 0.5,
+        duration: 0.7,
         y: "-215%",
         x: "-5%",
         rotate: 353,

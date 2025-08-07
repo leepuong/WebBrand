@@ -138,10 +138,6 @@ button {
   background: #500403;
 }
 
-body {
-  /* height: 10000px; */
-}
-
 .boxVideo {
   position: relative;
   width: 100%;
@@ -276,6 +272,7 @@ video {
   background-color: #ff15152b;
   backdrop-filter: blur(3px);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .namePage {
@@ -735,8 +732,7 @@ video {
 .nameAndPriceItem > h4 {
   font-size: 18px;
 }
-.removeItem {
-}
+
 .qty-input {
   /* background-color: #500403; */
   height: 40px;
