@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./homeStyle.css">
+    <link rel="stylesheet" href="./menuStyle.css">
+</head>
+
+<body>
+    <div class="shopPage">
+        <div class="header">
+            <div class="headerBlock">
+                <div class="headerLeft">
+                    <div class="menu">
+                        <img width="32" height="32" src="https://img.icons8.com/ffffff/sf-black/64/menu.png"
+                            alt="menu" />
+                    </div>
+                    <div class="namePage" scroll-behavior="smooth">
+                        Contact
+                    </div>
+                </div>
+                <div class=" headerRight">
+                    <div class="bagBtn">Bag</div>
+                    <div class="iconBag">
+                        <img width="24" height="24" src="https://img.icons8.com/ffffff/tiny-glyph/16/product.png"
+                            alt="product" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script type="module" src="./gsapPopup.js"></script>
+
+        <div class="background-image">
+            <div class="boxFlying1 boxFlying"></div>
+            <div class="boxFlying2 boxFlying"></div>
+            <div class="boxFlying3 boxFlying"></div>
+            <div class="boxFlying4 boxFlying"></div>
+            <div class="boxFlying5 boxFlying"></div>
+        </div>
+
+        <div class="popupBag">
+            <div class="popupContent">
+
+                <div class="itemBag">
+                    <div class="item">
+                        <div class="imgItem Archaeologist_T_BG">
+                            <div class="itemImgT-Shirt Archaeologist_T_F"></div>
+                        </div>
+                        <div class="contentItem">
+                            <div class="infoItem">
+                                <div class="nameAndPriceItem">
+                                    <h4>Archaeologist</h4>
+                                    <p>15$</p>
+                                </div>
+                                <div class="removeItem"><img width="24" height="24"
+                                        src="https://img.icons8.com/f3f3f3/forma-thin/24/recycle-bin.png"
+                                        alt="recycle-bin" /></div>
+                            </div>
+                            <div class="qty-input">
+                                <span class="qty-count qty-count--minus1">-</span>
+                                <span class="product-qty1">01</span>
+                                <span class="qty-count qty-count--add1">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBag">
+                    <div class="item">
+                        <div class="imgItem Corpse_Collector_T_BG">
+                            <div class="itemImgT-Shirt Corpse_Collector_T_F"></div>
+                        </div>
+                        <div class="contentItem">
+                            <div class="infoItem">
+                                <div class="nameAndPriceItem">
+                                    <h4>Corpse Collector</h4>
+                                    <p>15$</p>
+                                </div>
+                                <div class="removeItem"><img width="24" height="24"
+                                        src="https://img.icons8.com/f3f3f3/forma-thin/24/recycle-bin.png"
+                                        alt="recycle-bin" /></div>
+                            </div>
+                            <div class="qty-input">
+                                <span class="qty-count qty-count--minus2">-</span>
+                                <span class="product-qty2">01</span>
+                                <span class="qty-count qty-count--add2">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkOut">
+                <div class="subTotal">
+                    <p>SubTotal:</p>
+                    <h3>0$</h3>
+                </div>
+                <div class="checkOutBtn">Check Out</div>
+            </div>
+        </div>
+
+        <div class="popupMenu">
+            <div class="boxMenu">
+                <div class="boxHome" onclick="window.location.href='./homePage.html';" style="cursor: pointer;">
+                    <div class="homeL"></div>Home
+                </div>
+                <div class="boxShop" onclick="window.location.href='./shopPage.html';" style="cursor: pointer;">
+                    <div class="shopL"></div>Shop
+                </div>
+                <div class="boxContact" onclick="window.location.href='./contactPage.html';" style="cursor: pointer;">
+                    <div class="contactL"></div>
+                    contact
+                </div>
+                <div class="boxProfile" onclick="window.location.href='./profilePage.html';" style="cursor: pointer;">
+                    <div class="profileL"></div>
+                    profile
+                </div>
+            </div>
+        </div>
+        <!-- Script xử lý popup Bag - đã chuyển sang main.js -->
+        <script type="module" src="./mainShop.js"></script>
+        <script type="module" src="./func.js"></script>
+    </div>
+</body>
+
+</html>

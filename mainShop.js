@@ -53,32 +53,5 @@ iconBag.addEventListener("click", toggleBagPopup);
 menu.addEventListener("click", toggleMenuPopup);
 namePage.addEventListener("click", toggleMenuPopup);
 
-// Hiệu ứng slide giữa 2 viewProduct khi nhấn lineForProNew
 
-const swiper = new Swiper('.wrapper', {
-    // Optional parameters
-    // direction: 'vertical',
-    loop: true,
-    spaceBetween: 50,
-    speed: 1700,
-    parallax: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
-    // If we need pagination
-    pagination: {
-      el: '.swiper-pagination',
-    },
-  
-    // Navigation arrows
-    scrollbar: {
-        el: ".swiper-scrollbar",
-        hide: true,
-      },
-  });
 
