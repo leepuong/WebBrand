@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./homeStyle.css">
     <link rel="stylesheet" href="./menuStyle.css">
+    <link rel="stylesheet" href="./profilePage.css">
 </head>
 
 <body>
@@ -31,10 +32,81 @@
                 </div>
             </div>
         </div>
+        <div class="pageLayer2">
+        </div>
+        <!-- <div class="subHeaderOfProduct">
+            <p class="new">Profile</p>
+        </div> -->
+        <div class="pageLayer3">
+            <div class="profile_card">
+                <div class="card-container" onclick="toggleCard()">
+                    <div class="card card-front">
+                        <div class="head_card">
+                            <div class="cover_card">
+                                <div class="avata_card"></div>
+                            </div>
+                        </div>
+                        <div class="tall_card">
+                            <div class="content_tall_card">
+                                <div class="right_card">
+                                    <h4>Name</h4>
+                                    <p>llePhuong</p>
+                                    <h4>BirthDay</h4>
+                                    <p>18/01/2005</p>
+                                </div>
+                                <div class="left_card">
+                                    <h4>PhoneNumber</h4>
+                                    <p>0868746727</p>
+                                    <h4>Address</h4>
+                                    <p>Unit 7, Pinster Street, North Borough, Backlund, Loen</p>
+                                </div>
+                            </div>
+                        </div>
 
+
+
+
+                    </div>
+                    <div class="card card-back">
+                        <div class="head_card">
+                            <div class="cover_card">
+                                <div class="avata_card"></div>
+                            </div>
+                        </div>
+                        <div class="tall_card">
+                            <div class="content_tall_card">
+                                <div class="right_card">
+                                    <h4>Name</h4>
+                                    <p>llePhuong</p>
+                                    <h4>BirthDay</h4>
+                                    <p>18/01/2005</p>
+                                </div>
+                                <div class="left_card">
+                                    <h4>PhoneNumber</h4>
+                                    <p>0868746727</p>
+                                    <h4>Address</h4>
+                                    <p>Unit 7, Pinster Street, North Borough, Backlund, Loen</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="pageLayer1">
+            <div class="bgFooter">
+                <div class="textOnfooter"></div>
+                <div class="bannerWarning rotation3"></div>
+                <div class="bannerWarning rotation2"></div>
+                <div class="bannerWarning rotation1"></div>
+            </div>
+        </div>
 
 
         <script type="module" src="./gsapPopup.js"></script>
+        <script type="module" src="./gsapScroll.js"></script>
 
         <div class="background-image">
             <div class="boxFlying1 boxFlying"></div>
@@ -123,6 +195,13 @@
         </div>
         <!-- Script xử lý popup Bag - đã chuyển sang main.js -->
         <script type="module" src="./mainShop.js"></script>
+        <script>
+            function toggleCard() {
+                const cardContainer = document.querySelector('.card-container');
+                cardContainer.classList.toggle('lifted');
+            }
+        </script>
+        <script type="module" src="./mainProfile.js"></script>
         <script type="module" src="./func.js"></script>
     </div>
 </body>

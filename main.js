@@ -81,4 +81,3 @@ const swiper = new Swiper('.wrapper', {
         hide: true,
       },
   });
-

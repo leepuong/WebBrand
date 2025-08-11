@@ -13,15 +13,23 @@
 .Mystery_Pryer_T_F {
   background-image: url(/src/Mystery_Pryer_F_V1.png);
 }
+.Mystery_Pryer_T_F_V2 {
+  background-image: url(/src/Mystery_Pryer_F_V2.png);
+}
 .Mystery_Pryer_T_B {
   background-image: url(/src/Mystery_Pryer_B_V1.png);
 }
 .Mystery_Pryer_T_BG {
   background-image: url(/src/Mystery_Pryer_Bg17.png);
   animation: morphBgMystery_Pryer 10s linear infinite;
+  background-size: cover;
+  background-position: center;
 }
 .Archaeologist_T_F {
   background-image: url(/src/Archaeologist_F_V1.png);
+}
+.Archaeologist_T_F_V2 {
+  background-image: url(/src/Archaeologist_F_V2.png);
 }
 .Archaeologist_T_B {
   background-image: url(/src/Archaeologist_B_V1.png);
@@ -29,9 +37,14 @@
 .Archaeologist_T_BG {
   background-image: url(/src/Archaeologist_Bg17.png);
   animation: morphBgArchaeologist 10s linear infinite;
+  background-position: center;
+  background-size: cover;
 }
 .Corpse_Collector_T_F {
   background-image: url(/src/Corpse_Collector_F_V1.png);
+}
+.Corpse_Collector_T_F_V2 {
+  background-image: url(/src/Corpse_Collector_F_V2.png);
 }
 .Corpse_Collector_T_B {
   background-image: url(/src/Corpse_Collector_B_V1.png);
@@ -39,6 +52,8 @@
 .Corpse_Collector_T_BG {
   background-image: url(/src/Corpse_Collector_Bg17.png);
   animation: morphBgCorpse_Collector 10s linear infinite;
+  background-position: center;
+  background-size: cover;
 }
 
 @keyframes morphBgCorpse_Collector {

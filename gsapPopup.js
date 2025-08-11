@@ -32,7 +32,7 @@ export function setupBagAnimation() {
     });
     gsap.set(flyingImage3, {
         y: "-643px",
-        x: "1506px",
+        x: "1511px",
         rotate: 348
     });
     gsap.set(flyingImage4, {

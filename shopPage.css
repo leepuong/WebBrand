@@ -1,0 +1,71 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px 20px;
+  padding: 15px 0 40px;
+}
+@font-face {
+  font-family: "CASCADIACODE";
+  src: url(./src/CASCADIACODE-REGULAR.TTF);
+}
+
+.grid-item {
+  background-color: #ddd;
+  position: relative;
+  /* border: 1px solid #999; */
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  aspect-ratio: 1/1.4;
+  background-repeat: no-repeat;
+  background-color: black;
+  clip-path: path(
+    "M190.6264 416.6203a7.7929 7.7929 90 01-7.7929 7.7929H121.7891a7.7929 7.7929 90 01-7.7929-7.7929V397.138a7.7929 7.7929 90 017.7929-7.7929h61.0443a7.7929 7.7929 90 017.7929 7.7929Zm16.8846-27.2751a7.7929 7.7929 90 00-7.7929 7.7929v19.4822a7.7929 7.7929 90 007.7929 7.7929h88.3195a7.7929 7.7929 90 007.7929-7.7929V397.138a7.7929 7.7929 90 00-7.7929-7.7929ZM293.2328.9993a10.3905 10.3905 90 0110.3905 10.3905V369.8629a10.3905 10.3905 90 01-10.3905 10.3905H115.2951a10.3905 10.3905 90 00-10.3905 10.3905v23.3787a10.3905 10.3905 90 01-10.3905 10.3905H11.3898a10.3905 10.3905 90 01-10.3905-10.3905V55.5495a10.3905 10.3905 90 0110.3905-10.3905H190.6264a10.3905 10.3905 90 0010.3905-10.3905V11.3898a10.3905 10.3905 90 0110.3905-10.3905ZM.9993 28.2744a7.7929 7.7929 90 007.7929 7.7929H184.1323a7.7929 7.7929 90 007.7929-7.7929V8.7922a7.7929 7.7929 90 00-7.7929-7.7929H8.7922A7.7929 7.7929 90 00.9993 8.7922V28.2744Z"
+  );
+}
+
+/* M 0 21 L 0 6 A 6 6 0 0 1 6 0 L 141 0 A 6 6 0 0 1 147 6 L 147 21 A 6 6 0 0 1 141 27 L 6 27 A 6 6 0 0 1 0 21 z M 162 0 A 8 8 0 0 0 154 8 L 154 26 A 8 8 0 0 1 146 34 L 8 34 A 8 8 0 0 0 0 42 L 0 318 A 8 8 0 0 0 8 326 L 72 326 A 8 8 0 0 0 80 318 L 80 300 A 8 8 0 0 1 88 292 L 225 292 A 8 8 0 0 0 233 284 L 233 8 A 8 8 0 0 09 225 0 z M 227 299 A 6 6 0 0 1 233 305 L 233 320 A 6 6 0 0 1 227 326 L 159 326 A 6 6 0 0 1 153 320 L 153 305 A 6 6 0 0 1 159 299 z M 146 305 A 6 6 0 0 0 140 299 L 93 299 A 6 6 0 0 0 87 305 L 87 320 A 6 6 0 0 0 93 326 L 140 326 A 6 6 0 0 0 146 320 z */
+
+.itemProduct_shop {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60%;
+  aspect-ratio: 1 / 1;
+}
+
+.nameProduct_shop {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  mix-blend-mode: difference;
+  color: #8d2f31;
+  /* opacity: 0.4; */
+  font-family: CASCADIACODE;
+  font-size: 18px;
+}
+
+.varProduct_shop {
+  position: absolute;
+  mix-blend-mode: difference;
+  color: #8d2f31;
+  /* opacity: 0.4; */
+  bottom: 11px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: CASCADIACODE;
+}
+
+.priceProduct_shop {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  mix-blend-mode: difference;
+  color: #8d2f31;
+  /* opacity: 0.4; */
+  font-family: CASCADIACODE;
+}
