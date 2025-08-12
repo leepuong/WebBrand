@@ -710,6 +710,8 @@ video {
   aspect-ratio: 1/1;
   z-index: 40;
   position: absolute;
+  transform: scale(1);
+  top: 12%;
   /* top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
