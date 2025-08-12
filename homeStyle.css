@@ -869,3 +869,28 @@ video {
 .boxFlying5 {
   box-shadow: 11px 15px 18px #00000094;
 }
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #22201d77;
+  padding: calc(300px / 2) 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: #18161317;
+  border-radius: 10px;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #22201d9a;
+
+  background-color: #1816132d;
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  color: #ab0c0c59;
+
+  background-color: #1d080754;
+}

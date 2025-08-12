@@ -40,13 +40,17 @@
 
 .nameProduct_shop {
   position: absolute;
-  top: 8px;
-  left: 10px;
+  top: 0;
+  left: 0;
   mix-blend-mode: difference;
   color: #8d2f31;
   /* opacity: 0.4; */
   font-family: CASCADIACODE;
   font-size: 18px;
+  display: block;
+  background-color: #2b0000da;
+  padding: 8px 40px 8px 16px;
+  max-width: 195px;
 }
 
 .varProduct_shop {
@@ -54,18 +58,27 @@
   mix-blend-mode: difference;
   color: #8d2f31;
   /* opacity: 0.4; */
-  bottom: 11px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   font-family: CASCADIACODE;
+  display: block;
+  background-color: #330606c5;
+  padding: 10px 16px 10px 16px;
+  max-width: 80px;
 }
 
 .priceProduct_shop {
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  bottom: 0;
+  right: 0;
   mix-blend-mode: difference;
   color: #8d2f31;
   /* opacity: 0.4; */
   font-family: CASCADIACODE;
+  display: block;
+  background-color: #330606e8;
+  /* width: 97px; */
+  padding: 7px 10px 11px 62px;
+  max-width: 110px;
 }

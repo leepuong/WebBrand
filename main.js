@@ -80,4 +80,10 @@ const swiper = new Swiper('.wrapper', {
         el: ".swiper-scrollbar",
         hide: true,
       },
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      
   });
