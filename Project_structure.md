@@ -14,13 +14,13 @@ Root path: `c:\Users\Loned\Desktop\ASM\Website_Design_&_Development_7419\FinalWe
 │   ├── 🖼️ warningIcon.svg
 │   └── 🖼️ worlaholic.svg
 ├── 🎨 contactPage.css
-├── 🌐 contactPage.html
+├── 🌐 contactPage.html             (Contact page)
 ├── 📄 func.js
 ├── 📄 gsapPopup.js
 ├── 📄 gsapScroll.js
-├── 🌐 homePage.html
+├── 🌐 homePage.html                (Home page)
 ├── 🎨 homeStyle.css
-├── 🌐 index.html
+├── 🌐 index.html                   (Login page)
 ├── 📄 main.js
 ├── 📄 mainContact.js
 ├── 📄 mainProfile.js
@@ -29,10 +29,10 @@ Root path: `c:\Users\Loned\Desktop\ASM\Website_Design_&_Development_7419\FinalWe
 ├── 📄 package-lock.json
 ├── 📄 package.json
 ├── 🎨 profilePage.css
-├── 🌐 profilePage.html
-├── 🌐 register.html
+├── 🌐 profilePage.html             (Profile page)
+├── 🌐 register.html                (Register page)
 ├── 🎨 shopPage.css
-├── 🌐 shopPage.html
+├── 🌐 shopPage.html                (Shop page)
 ├── 🎨 style.css
 └── 📄 validate.js
 ```
