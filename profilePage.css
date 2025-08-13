@@ -110,3 +110,8 @@
   font-size: 14px;
   opacity: 0.8;
 }
+
+.right_card {
+  min-width: 90px;
+  max-width: 90px;
+}
