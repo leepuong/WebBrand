@@ -62,6 +62,14 @@
   text-align: center;
   position: relative;
 }
+.boxlogOut {
+  margin: 30px 0;
+  /* background-color: red; */
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-top: 320px;
+}
 
 .homeL {
   background-image: url(./src/homeL.png);
@@ -112,5 +120,18 @@
   top: -31%;
   transform: translateX(-50%);
   left: 43px;
+  z-index: 81;
+}
+
+.logoutL {
+  background-image: url(./src/LogoutL.png);
+  height: 50px;
+  background-repeat: no-repeat;
+  width: 232px;
+  background-size: contain;
+  position: absolute;
+  top: -35%;
+  transform: translateX(-50%);
+  left: 37px;
   z-index: 81;
 }

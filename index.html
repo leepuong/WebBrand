@@ -7,6 +7,7 @@
     <title>Web Design</title>
     <link rel="stylesheet" href="/style.css" />
     <script src="/main.js"></script>
+    <script src="/validate.js"></script>
 </head>
 
 <body>
@@ -18,23 +19,15 @@
             </div>
             <div class="boxBtnLogWithGoogle styleBtn">
                 <button class="btnLogWithGoogle" onclick="window.location.href='./homePage.html'">
-            <img
-              width="28"
-              height="28"
-              src="https://img.icons8.com/color/48/google-logo.png"
-              alt="google-logo"
-            />Log in with Google
-          </button>
+                    <img width="28" height="28" src="https://img.icons8.com/color/48/google-logo.png"
+                        alt="google-logo" />Log in with Google
+                </button>
             </div>
             <div class="boxBtnLogWithAppleID styleBtn">
                 <button class="btnLogWithAppleID" onclick="window.location.href='./homePage.html'">
-            <img
-              width="28"
-              height="28"
-              src="https://img.icons8.com/ios-filled/ffffff/50/mac-os.png"
-              alt="mac-os"
-            />Log in with Apple ID
-          </button>
+                    <img width="28" height="28" src="https://img.icons8.com/ios-filled/ffffff/50/mac-os.png"
+                        alt="mac-os" />Log in with Apple ID
+                </button>
             </div>
             <div class="or">
                 <hr />
@@ -52,15 +45,19 @@
                 <div class="inputBoxPass">
                     <input id="passwordInput" type="password" placeholder="Your password" />
 
-                    <img id="showIcon" class="toggle-icon" width="24" height="24" src="https://img.icons8.com/ffffff/material-outlined/24/visible--v1.png" alt="Show password" onclick="togglePassword()" />
+                    <img id="showIcon" class="toggle-icon" width="24" height="24"
+                        src="https://img.icons8.com/ffffff/material-outlined/24/visible--v1.png" alt="Show password"
+                        onclick="togglePassword()" />
 
-                    <img id="hideIcon" class="toggle-icon hidden" width="24" height="24" src="https://img.icons8.com/ffffff/material-outlined/24/invisible.png" alt="Hide password" onclick="togglePassword()" />
+                    <img id="hideIcon" class="toggle-icon hidden" width="24" height="24"
+                        src="https://img.icons8.com/ffffff/material-outlined/24/invisible.png" alt="Hide password"
+                        onclick="togglePassword()" />
                 </div>
             </div>
             <div class="boxBtnLogin styleBtn">
-                <button class="btnlogin" onclick="window.location.href='./homePage.html'">
-            Log in
-          </button>
+                <button class="btnlogin" type="button">
+                    Log in
+                </button>
             </div>
             <div class="dontHaveAnAcc">
                 Don't have an account? <a href="./register.html">Sign up</a>
