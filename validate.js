@@ -16,11 +16,11 @@ function validatePassword(password) {
 // Show error message function
 function showError(element, message) {
     // Remove existing error message
-    const existingError = element.parentNode.querySelector('.error-message');
+    const existingError = element.parentNode.parentNode.querySelector('.error-message');
     if (existingError) {
         existingError.remove();
     }
-    
+
     // Add error message
     const errorDiv = document.createElement('div');
     errorDiv.className = 'error-message';
@@ -28,8 +28,8 @@ function showError(element, message) {
     errorDiv.style.fontSize = '12px';
     errorDiv.style.marginTop = '0px';
     errorDiv.textContent = message;
-    
-    element.parentNode.appendChild(errorDiv);
+
+    element.parentNode.parentNode.appendChild(errorDiv);
     element.style.borderColor = '#ff4444';
 }
 
@@ -45,7 +45,7 @@ function removeError(element) {
 // Real-time email validation
 function validateEmailRealTime(input) {
     const email = input.value.trim();
-    
+
     if (email === '') {
         showError(input, 'Email is required');
         return false;
@@ -61,7 +61,7 @@ function validateEmailRealTime(input) {
 // Real-time password validation
 function validatePasswordRealTime(input) {
     const password = input.value;
-    
+
     if (password === '') {
         showError(input, 'Password is required');
         return false;
@@ -81,7 +81,7 @@ function validatePasswordRealTime(input) {
 function validateConfirmPassword(passwordInput, confirmPasswordInput) {
     const password = passwordInput.value;
     const confirmPassword = confirmPasswordInput.value;
-    
+
     if (confirmPassword === '') {
         showError(confirmPasswordInput, 'Please confirm your password');
         return false;
@@ -98,15 +98,15 @@ function validateConfirmPassword(passwordInput, confirmPasswordInput) {
 function validateLoginForm() {
     const emailInput = document.querySelector('input[type="email"]');
     const passwordInput = document.getElementById('passwordInput');
-    
+
     if (!emailInput || !passwordInput) {
         console.error('Login form elements not found');
         return false;
     }
-    
+
     const isEmailValid = validateEmailRealTime(emailInput);
     const isPasswordValid = validatePasswordRealTime(passwordInput);
-    
+
     if (isEmailValid && isPasswordValid) {
         // If validation passes, redirect to home page
         window.location.href = './homePage.html';
@@ -121,16 +121,16 @@ function validateRegistrationForm() {
     const emailInput = document.querySelector('input[type="email"]');
     const passwordInput1 = document.getElementById('passwordInput1');
     const passwordInput2 = document.getElementById('passwordInput2');
-    
+
     if (!emailInput || !passwordInput1 || !passwordInput2) {
         console.error('Registration form elements not found');
         return false;
     }
-    
+
     const isEmailValid = validateEmailRealTime(emailInput);
     const isPasswordValid = validatePasswordRealTime(passwordInput1);
     const isConfirmPasswordValid = validateConfirmPassword(passwordInput1, passwordInput2);
-    
+
     if (isEmailValid && isPasswordValid && isConfirmPasswordValid) {
         // If validation passes, redirect to home page
         window.location.href = './homePage.html';
@@ -145,7 +145,7 @@ function initLoginValidation() {
     const emailInput = document.querySelector('input[type="email"]');
     const passwordInput = document.getElementById('passwordInput');
     const loginButton = document.querySelector('.btnlogin');
-    
+
     if (emailInput && passwordInput && loginButton) {
         // Add event listeners for real-time validation
         emailInput.addEventListener('blur', () => validateEmailRealTime(emailInput));
@@ -154,14 +154,14 @@ function initLoginValidation() {
                 validateEmailRealTime(emailInput);
             }
         });
-        
+
         passwordInput.addEventListener('blur', () => validatePasswordRealTime(passwordInput));
         passwordInput.addEventListener('input', () => {
             if (passwordInput.parentNode.querySelector('.error-message')) {
                 validatePasswordRealTime(passwordInput);
             }
         });
-        
+
         // Override the login button click event
         loginButton.onclick = function(e) {
             e.preventDefault();
@@ -176,7 +176,7 @@ function initRegistrationValidation() {
     const passwordInput1 = document.getElementById('passwordInput1');
     const passwordInput2 = document.getElementById('passwordInput2');
     const signupButton = document.querySelector('.btnlogin');
-    
+
     if (emailInput && passwordInput1 && passwordInput2 && signupButton) {
         // Add event listeners for real-time validation
         emailInput.addEventListener('blur', () => validateEmailRealTime(emailInput));
@@ -185,21 +185,21 @@ function initRegistrationValidation() {
                 validateEmailRealTime(emailInput);
             }
         });
-        
+
         passwordInput1.addEventListener('blur', () => validatePasswordRealTime(passwordInput1));
         passwordInput1.addEventListener('input', () => {
             if (passwordInput1.parentNode.querySelector('.error-message')) {
                 validatePasswordRealTime(passwordInput1);
             }
         });
-        
+
         passwordInput2.addEventListener('blur', () => validateConfirmPassword(passwordInput1, passwordInput2));
         passwordInput2.addEventListener('input', () => {
             if (passwordInput2.parentNode.querySelector('.error-message')) {
                 validateConfirmPassword(passwordInput1, passwordInput2);
             }
         });
-        
+
         // Override the signup button click event
         signupButton.onclick = function(e) {
             e.preventDefault();
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (document.querySelector('.btnlogin') && document.getElementById('passwordInput')) {
         initLoginValidation();
     }
-    
+
     // Check if we're on the registration page (register.html)
     if (document.querySelector('.btnlogin') && document.getElementById('passwordInput1') && document.getElementById('passwordInput2')) {
         initRegistrationValidation();
